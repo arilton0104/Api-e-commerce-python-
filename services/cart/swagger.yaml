@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: Cart Microservice API
+  version: 1.0.0
+paths:
+  /api/cart/add/{product_id}:
+    post:
+      summary: Add item to cart
+  /api/cart/remove/{item_id}:
+    delete:
+      summary: Remove item from cart
+  /api/cart:
+    get:
+      summary: View cart
+  /api/cart/checkout:
+    post:
+      summary: Process checkout
